@@ -1,0 +1,3 @@
+class StudentTypeError < StandardError
+    
+end
