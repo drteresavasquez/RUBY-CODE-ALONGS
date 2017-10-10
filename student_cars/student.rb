@@ -16,16 +16,16 @@ class Student
 
         #####################################
         # This tells the code block to keep the app running if there is an error
-        puts "BEFORE begin-end block of code"
+        # puts "BEFORE begin-end block of code"
         begin
-            puts "Hi, this is working!"
+        #     puts "Hi, this is working!"
 
             #this changes the default output of the specified error
             raise ArgumentError, "Arugument is not an integer" unless age.is_a? Integer
 
-            raise StudentTypeError, "PUT SOMETHING HERE"
+            # raise StudentTypeError, "PUT SOMETHING HERE"
 
-            puts "Is still working?"
+            # puts "Is still working?"
             puts "#{name} is #{age} years old"
         rescue ArgumentError => e
             puts "There has been an exception"
@@ -34,12 +34,12 @@ class Student
             puts "Exception backtrace: #{e.backtrace.inspect}"
         rescue StudentTypeError => e
             puts "Error: #{e.message}"
-        else
-            puts "Run this code if everything goes well."
-        ensure
-            puts "This code always runs!!!"
+        # else
+        #     puts "Run this code if everything goes well."
+        # ensure
+        #     puts "This code always runs!!!"
         end
-        puts "AFTER begin-end block of code"
+        # puts "AFTER begin-end block of code"
         ######################################
 
 
