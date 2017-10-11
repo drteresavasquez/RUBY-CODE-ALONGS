@@ -11,3 +11,6 @@ class Dog < Animal
         @speed = @speed + (0.2 * @legs)
     end
 end
+
+# luna = Dog.new("Luna")
+# puts luna.walk 
